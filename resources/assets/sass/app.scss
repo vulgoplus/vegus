@@ -1,0 +1,15 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// Variables
+@import "variables";
+
+@media (min-width: 1281px) {
+	.main-sidebar.md-sidenav .md-sidenav-content {
+	    top: 0;
+	    pointer-events: auto;
+	    transform: translateZ(0)!important;
+	    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+	}
+}
