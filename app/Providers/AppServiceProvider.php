@@ -12,7 +12,7 @@ class AppServiceProvider extends ServiceProvider
     protected $repositories = [
         // \App\Repository\UserRepositoryInterface::class => \App\Repository\UserRepository::class,
     ];
-    
+
     /**
      * Bootstrap any application services.
      *
@@ -38,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
      */
     protected function registerRepositories()
     {
-        $this->app->register(RepositoryServiceProvider::class);
+        // $this->app->register(RepositoryServiceProvider::class);
         foreach ($this->repositories as $interface => $class) {
             $this->app->bind($interface, $class);
         }

@@ -1,6 +1,9 @@
 <template>
     <div class="page-content">
-        <md-whiteframe md-tag="md-toolbar" md-elevation="1" class="main-header">
+        <md-whiteframe md-tag="md-toolbar" md-elevation="1">
+            <md-button class="md-icon-button nav-trigger" @click="toggleSidenav">
+                <md-icon>menu</md-icon>
+            </md-button>
             <div class="md-title">{{ pageTitle }}</div>
         </md-whiteframe>
 
@@ -27,13 +30,9 @@
 }
 .md-title {
     flex: 1;
+    text-transform: capitalize;
     @media (min-width: 1281px) {
       margin-left: 8px;
-  }
-}
-.github {
-    @media (max-width: 480px) {
-      display: none;
   }
 }
 </style>
@@ -45,7 +44,7 @@
     },
     methods: {
         toggleSidenav() {
-            this.$root.toggleSidenav();
+            this.$root.$children[0].toggleSidenav()
         }
     },
     mounted() {

@@ -11,15 +11,15 @@ window.Vue = require('vue')
 window.VueMaterial = require('vue-material')
 
 import GlobalComponents from './components'
+import router from './router/router'
 
 Vue.use(VueMaterial)
 Vue.use(GlobalComponents)
 
-Vue.material.registerTheme('default', {
-  	primary: 'green',
-  	// accent: 'red',
-  	// warn: 'red',
-  	// background: 'grey'
+Vue.material.registerTheme({
+    default: {
+        primary: 'white',
+    }
 })
 
 /**
@@ -32,5 +32,6 @@ import App from './App.vue'
 
 const app = new Vue({
     el: '#app',
+    router,
     render: h => h(App),
 });
