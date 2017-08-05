@@ -6,6 +6,9 @@
 
 <script>
 export default {
+    mounted() {
+        this.$bar.start()
+    }
 }
 </script>
 

@@ -21,9 +21,17 @@
             </router-link>
         </md-list-item>
         <md-list-item>
-            <router-link exact to="/categories">
-                <md-icon>widgets</md-icon> <span>Categories</span>
-            </router-link>
+            <md-icon>widgets</md-icon> <span>Posts</span>
+            <md-list-expand>
+                <md-list>
+                    <md-list-item class="md-inset">
+                        <router-link exact to="/posts">List</router-link>
+                    </md-list-item>
+                    <md-list-item class="md-inset">
+                        <router-link exact to="/posts/add">Add</router-link>
+                    </md-list-item>
+                </md-list>
+            </md-list-expand>
         </md-list-item>
 <!--
         <md-list-item>

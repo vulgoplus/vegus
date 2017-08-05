@@ -15,9 +15,6 @@
 .page-content {
     min-height: 100%;
     max-height: 100%;
-    flex: 1;
-    display: flex;
-    flex-flow: column
 }
 .main-header {
     z-index: 2;

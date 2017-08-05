@@ -1,6 +1,6 @@
 <template lang="html">
-    <page-content page-title="Categories">
-
+    <page-content page-title="Add categories">
+        
     </page-content>
 </template>
 

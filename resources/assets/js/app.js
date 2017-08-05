@@ -11,14 +11,17 @@ window.Vue = require('vue')
 window.VueMaterial = require('vue-material')
 
 import GlobalComponents from './components'
+import Lib from './libs/boot'
 import router from './router/router'
 
 Vue.use(VueMaterial)
 Vue.use(GlobalComponents)
+Vue.use(Lib)
 
 Vue.material.registerTheme({
     default: {
-        primary: 'white',
+        primary: 'blue',
+        accent: 'pink'
     }
 })
 
